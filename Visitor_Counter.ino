@@ -6,7 +6,7 @@ void setup() {
   pinMode(ir1,INPUT);
   pinMode(ir2,INPUT);
   Serial.begin(9600);
-  Serial.println("******DIGITAL FOOTFALL TRACKER******");
+  Serial.println("******DIGITAL VISITOR COUNTER******");
 }
 
 void loop() {
@@ -24,7 +24,7 @@ void loop() {
     Serial.print("Total:");Serial.println(count);
     delay(500);
     if (count==0){
-      Serial.println("******DIGITAL FOOTFALL TRACKER******");
+      Serial.println("******DIGITAL VISITOR COUNTER******");
       delay(10000);
     }
   }
